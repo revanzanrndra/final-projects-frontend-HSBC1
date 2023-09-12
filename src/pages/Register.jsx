@@ -1,3 +1,5 @@
+import logoLock from'../assets/lock.png';
+
 function Register() {
   return (
     <section id="content">
@@ -19,7 +21,7 @@ function Register() {
         <div className="flex items-center justify-between mb-10">
           <h1 className="text-3xl font-bold">BUAT AKUN</h1>
           <img
-            src="../assets/lock.png"
+            src={logoLock}
             alt="Lock"
             className="w-5 h-5 lg:mr-[580px]"
           />
