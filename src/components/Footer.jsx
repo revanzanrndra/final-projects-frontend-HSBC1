@@ -1,3 +1,8 @@
+import logoFacebook from "../assets/facebook.svg";
+import logoTwitter from "../assets/twitter.svg";
+import logoInstagram from "../assets/instagram.svg";
+import logoYoutube from "../assets/youtube-.svg";
+
 function Footer() {
   return (
     <>
@@ -119,36 +124,16 @@ function Footer() {
               </h3>
               <div className="flex gap-4">
                 <a href="" target="_blank">
-                  <img
-                    src="dist/img/facebook.svg"
-                    width={40}
-                    height={40}
-                    alt=""
-                  />
+                  <img src={logoFacebook} width={40} height={40} alt="" />
                 </a>
                 <a href="" target="_blank">
-                  <img
-                    src="dist/img/twitter.svg"
-                    width={40}
-                    height={40}
-                    alt=""
-                  />
+                  <img src={logoTwitter} width={40} height={40} alt="" />
                 </a>
                 <a href="" target="_blank">
-                  <img
-                    src="dist/img/instagram.svg"
-                    width={40}
-                    height={40}
-                    alt=""
-                  />
+                  <img src={logoInstagram} width={40} height={40} alt="" />
                 </a>
                 <a href="" target="_blank">
-                  <img
-                    src="dist/img/youtube-.svg"
-                    width={40}
-                    height={40}
-                    alt=""
-                  />
+                  <img src={logoYoutube} width={40} height={40} alt="" />
                 </a>
               </div>
             </div>

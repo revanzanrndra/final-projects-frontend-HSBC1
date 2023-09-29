@@ -1,3 +1,5 @@
+import logoLock from "../assets/lock.png";
+
 function Register() {
   return (
     <section id="content">
@@ -6,7 +8,7 @@ function Register() {
         <div className="mb-10 hidden sm:block  ">
           <ol className="flex text-sm gap-2 text-slate-400">
             <li className="underline">
-              <a href="#">UNIQLO</a>
+              <a href="/">UNIQLO</a>
             </li>
             <li>/</li>
             <li>
@@ -18,11 +20,7 @@ function Register() {
         {/* text top */}
         <div className="flex items-center justify-between mb-10">
           <h1 className="text-3xl font-bold">BUAT AKUN</h1>
-          <img
-            src="../assets/lock.png"
-            alt="Lock"
-            className="w-5 h-5 lg:mr-[580px]"
-          />
+          <img src={logoLock} alt="Lock" className="w-5 h-5 lg:mr-[580px]" />
         </div>
         {/* end text top */}
         {/* card registry */}
