@@ -1,8 +1,9 @@
 import { useState } from "react";
 import DummyData from "../DummyData.jsx";
-
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const [email, emailchange] = useState("");
   const [password, passwordchange] = useState("");
 
@@ -12,6 +13,7 @@ function Login() {
       const user = DummyData.find((userData) => userData.email === email);
       if (user && user.password === password) {
         alert("Login succes");
+        window.location.href = "";
       } else {
         alert("Login failed, check your email and password ");
       }
@@ -29,12 +31,6 @@ function Login() {
     }
     return result;
   };
-
-  const redirectReg = () => {
-
-    window.location.href = "Home"; 
-  };
-  
 
   return (
     <>
@@ -121,7 +117,10 @@ function Login() {
               dipersonalisasi seperti melihat riwayat pembelian dan mendapatkan
               kupon diskon dengan keanggotaan Anda. Daftar hari ini, gratis!
             </p>
-            <button onClick={redirectReg} className="bg-black w-full md:w-2/4 h-10 md:h-11 mt-2 md:mt-5">
+            <button
+              onClick={() => navigate("/Register")}
+              className="bg-black w-full md:w-2/4 h-10 md:h-11 mt-2 md:mt-5"
+            >
               <p className="text-white text-base font-bold">BUAT AKUN</p>
             </button>
           </div>
