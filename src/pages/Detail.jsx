@@ -1,7 +1,23 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useState} from "react";
+import axios from "axios";
+import { useParams } from 'react-router-dom';
+
 
 function Detail() {
+  const [product, setProduct] = useState([])
+  const { id } = useParams();
+
+    axios
+        .get(`https://fakestoreapi.com/products/${id}`)
+        .then(function (response) {
+            setProduct(response.data)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
   return (
     <>
       <Header />
@@ -22,7 +38,7 @@ function Detail() {
           </a>
           <span> / </span>
           <span>
-            HEATTECH Pullover Fleece Kerah Tinggi Lengan Panjang (Turtleneck)
+            {product.title}
           </span>
         </div>
         <div className="flex gap-20 pt-10">
@@ -31,7 +47,7 @@ function Detail() {
               <div className="grid grid-cols-2 gap-1 gap-y-6 pr-8">
                 <button className="p-1 border border-black">
                   <img
-                    src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/459793/item/idgoods_46_459793.jpg?width=60"
+                    src={product.image}
                     width={50}
                     height={50}
                   />
@@ -96,7 +112,7 @@ function Detail() {
               <div>
                 <img
                   className=""
-                  src="https://image.uniqlo.com/UQ/ST3/id/imagesgoods/459793/item/idgoods_46_459793.jpg?width=750"
+                  src= {product.image}
                   width={519}
                   height={519}
                 />
@@ -107,7 +123,7 @@ function Detail() {
               <p className="text-lg font-bold">DESKRIPSI</p>
               <div className="text-sm">
                 <p className="text-slate-500">Kode Produk:</p>
-                <p className="text-slate-500">459793</p>
+                <p className="text-slate-500">{product.id}</p>
               </div>
             </div>
             <div className="bg-gray-200 py-[1px] mt-2" />
@@ -317,15 +333,16 @@ function Detail() {
           </div>
           <div id="box-beli">
             <h1 className="text-4xl font-bold">
-              HEATTECH Pullover <br />
+              {/* HEATTECH Pullover <br />
               Fleece Kerah Tinggi <br />
               Lengan Panjang <br />
-              (Turtleneck)
+              (Turtleneck) */}
+              {product.title}
             </h1>
             <div className="flex">
               <div className="pb-5">
-                <p className="font-bold line-through py-2">Rp199.000</p>
-                <p className="text-4xl font-bold text-red-500">Rp149.000</p>
+                {/* <p className="font-bold line-through py-2">Rp199.000</p> */}
+                <p className="text-4xl font-bold text-red-500">${product.price}</p>
                 <p className="text-red-500">
                   Limited Offer dari 25 Aug 2023 - 31 Aug <br />
                   2023
@@ -341,8 +358,7 @@ function Detail() {
               </div>
             </div>
             <p>
-              T-shirt pullover Wanita dengan kenyamanan dan kehangatan <br />
-              yang tak tertandingi. Desain turtleneck yang nyaman.
+              {product.description}
             </p>
             <div className="bg-gray-200 py-[1px] my-5" />
             <p className="text-xs font-bold">WARNA: 46 YELLOW</p>
