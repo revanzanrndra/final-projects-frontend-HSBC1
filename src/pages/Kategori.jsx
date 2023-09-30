@@ -511,7 +511,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white flex flex-col w-[11rem] lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -535,7 +535,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -633,7 +633,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white w-[11rem] flex flex-col lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -657,7 +657,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -755,7 +755,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white w-[11rem] flex flex-col lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -779,7 +779,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -877,7 +877,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card flex flex-col bg-white w-[11rem] lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -901,7 +901,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1002,7 +1002,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white flex flex-col w-[11rem] lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1026,7 +1026,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1124,7 +1124,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white w-[11rem] flex flex-col lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1148,7 +1148,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1246,7 +1246,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white w-[11rem] flex flex-col lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1270,7 +1270,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1368,7 +1368,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card flex flex-col bg-white w-[11rem] lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1392,7 +1392,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1493,7 +1493,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white flex flex-col w-[11rem] lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1517,7 +1517,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1615,7 +1615,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white w-[11rem] flex flex-col lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1639,7 +1639,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
@@ -1737,7 +1737,7 @@ function Kategori() {
               </div>
             </div>
             <div className="product-card bg-white w-[11rem] flex flex-col lg:max-w-[13.4rem]">
-              <a href="#" className="product-item">
+              <a href="/Detail" className="product-item">
                 <div
                   className="product-image flex justify-end pr-2.5 pt-2.5 w-[11rem] h-[11rem] lg:w-[13.4rem] lg:h-[13.4rem]"
                   style={{
@@ -1761,7 +1761,7 @@ function Kategori() {
                 </div>
               </a>
               <div className="product-colors flex my-3 items-center px-2 lg:px-0">
-                <a href="#" className="product-item"></a>
+                <a href="/Detail" className="product-item"></a>
                 <a className="box-content bg-red-100 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-red-200 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
                 <a className="box-content bg-orange-300 border-white hover:border-black border-2 h-[1rem] w-[1rem] mr-1" />
