@@ -1,9 +1,66 @@
+import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import logoLock from "../assets/lock.png";
+// import DummyData from "../services/DummyData";
 
 function Register() {
+  const [email, emailchange] = useState("");
+  const [password, passwordchange] = useState("");
+
+  const ProceedRegister = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      // const user = DummyData.find((userData) => userData.email === email);
+
+      const users = [
+        {
+          email: "tyas@gmail.com",
+          password: "123",
+          kodepos: "1234",
+          date: "09/05/2023",
+          gender: "Wanita",
+        },
+        {
+          email: "ririn@gmail.com",
+          password: "456",
+          kodepos: "1234",
+          date: "09/05/2023",
+          gender: "Wanita",
+        },
+        {
+          email: "yoce@gmail.com",
+          password: "123456",
+          kodepos: "1234",
+          date: "09/05/2023",
+          gender: "Pria",
+        },
+      ];
+      const user = users.find((userData) => userData.email === email);
+
+      if (user && user.password === password) {
+        alert("Registration successful!, Silahkan Login!");
+        window.location.href = "Login";
+      } else {
+        alert("Email atau Password Salah. Silahkan cek kembali! ");
+        // window.location.href = "Login.jsx";
+      }
+    }
+  };
+  const validate = () => {
+    let result = true;
+    if (email === "" || email === null) {
+      result = false;
+      alert("Please input your email");
+    }
+    if (password === "" || password === null) {
+      result = false;
+      alert("Please input your password");
+    }
+    return result;
+  };
   return (
-    <section id="content">
-      <div className="mx-4 my-3.5 lg:m-14">
+    <section>
+      <form onSubmit={ProceedRegister} className="mx-4 my-3.5 lg:m-14">
         {/* link top */}
         <div className="mb-10 hidden sm:block  ">
           <ol className="flex text-sm gap-2 text-slate-400">
@@ -43,6 +100,8 @@ function Register() {
                 </p>
               </div>
               <input
+                value={email}
+                onChange={(e) => emailchange(e.target.value)}
                 type="text"
                 placeholder="Masukan Email Anda"
                 className="shadow border-b-2 border-x-slate-400 py-2 px-2 w-full bg-slate-100"
@@ -55,6 +114,8 @@ function Register() {
                 </p>
               </div>
               <input
+                value={password}
+                onChange={(e) => passwordchange(e.target.value)}
                 type="password"
                 placeholder=""
                 className="shadow border-b-2 border-x-slate-400 py-2 px-2 w-full bg-slate-100"
@@ -138,13 +199,17 @@ function Register() {
               <p className="font-bold underline py-1.5">KEBIJAKAN PRIVASI</p>
             </div>
             <div className="flex justify-center py-5">
-              <button className="bg-black text-white font-bold py-3.5 px-24 hover:opacity-80 sm:w-full lg:w-0 lg:justify-center lg:flex">
-                DAFTAR
+              <button
+                // onClick={() => navigate("/Login")}
+                type="submit"
+                className="bg-black text-white font-bold py-3.5 px-24 hover:opacity-80 sm:w-full lg:w-0 lg:justify-center lg:flex"
+              >
+                <p>DAFTAR</p>
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </section>
   );
 }
