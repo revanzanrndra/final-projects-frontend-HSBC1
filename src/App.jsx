@@ -9,10 +9,8 @@ import Detail from "./pages/Detail";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/Notfound";
-
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <Router>
