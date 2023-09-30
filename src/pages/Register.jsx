@@ -8,6 +8,8 @@ import Header from "../components/Header";
 function Register() {
   const [email, emailchange] = useState("");
   const [password, passwordchange] = useState("");
+  const [kodepos, kodeposchange] = useState("");
+  const [gender, genderchange] = useState("");
 
   const ProceedRegister = (e) => {
     e.preventDefault();
@@ -58,6 +60,15 @@ function Register() {
       result = false;
       alert("Please input your password");
     }
+    if (kodepos === "" || kodepos === null) {
+      result = false;
+      alert("Please input your kode POS");
+    }
+    if (gender === "" || gender === null) {
+      result = false;
+      alert("Please input your gender");
+    }
+
     return result;
   };
   return (
@@ -140,6 +151,8 @@ function Register() {
                   </p>
                 </div>
                 <input
+                  value={kodepos}
+                  onChange={(e) => kodeposchange(e.target.value)}
                   type="text"
                   placeholder="Silahkan masukkan kode pos."
                   className="shadow border-b-2 border-x-slate-400 py-2 px-2 w-full bg-slate-100"
@@ -162,17 +175,21 @@ function Register() {
                   <p className="font-bold text-xl mr-1">JENIS KELAMIN</p>
                 </div>
                 <div>
-                  <ol className="flex gap-2 py-2">
+                  <ol
+                    value={gender}
+                    onChange={(e) => genderchange(e.target.value)}
+                    className="flex gap-2 py-2"
+                  >
                     <li>
-                      <input type="radio" name="sexing" id="" />
+                      <input type="radio" name="gender" id="" />
                       Pria
                     </li>
                     <li>
-                      <input type="radio" name="sexing" id="" />
+                      <input type="radio" name="gender" id="" />
                       Wanita
                     </li>
                     <li>
-                      <input type="radio" name="sexing" id="" />
+                      <input type="radio" name="gender" id="" />
                       Tidak dipilih
                     </li>
                   </ol>
@@ -192,7 +209,12 @@ function Register() {
                 dan kebijakan privasi UNIQLO.
               </p>
               <div className="flex justify-start gap-2 py-2">
-                <input type="checkbox" name="" id="" className="w-4 h-4" />
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  id=""
+                  className="w-4 h-4"
+                />
                 <p>
                   Saya setuju dengan PERSYARATAN PENGGUNAAN dan KEBIJAKAN
                   PRIVASI UNIQLO
