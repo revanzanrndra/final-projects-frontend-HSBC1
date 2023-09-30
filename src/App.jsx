@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -9,12 +7,10 @@ import Kategori from "./pages/Kategori";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Login from "./pages/Login";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/Notfound";
-
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <Router>
