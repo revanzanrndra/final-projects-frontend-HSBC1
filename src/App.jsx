@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import NotFound from "./pages/Notfound";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Detail" element={<Detail />} />
           <Route path="/Kategori" element={<Kategori />} />
           <Route path="/Footer" element={<Footer />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </>
