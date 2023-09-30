@@ -13,7 +13,7 @@ function Login() {
       const user = DummyData.find((userData) => userData.email === email);
       if (user && user.password === password) {
         alert("Login succes");
-        window.location.href = "";
+        window.location.href = "/";
       } else {
         alert("Login failed, check your email and password ");
       }
