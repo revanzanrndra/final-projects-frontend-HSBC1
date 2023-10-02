@@ -3,6 +3,13 @@ import Header from "../components/Header";
 import { useState} from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
+import star from "../assets/star.png";
+import sfive from "../assets/s5.png";
+import starpack from "../assets/starpack.png";
+import slider from "../assets/slider.png";
+import ukuran from "../assets/ukuran.png";
+import twitter from "../assets/x.png";
+import facebook from "../assets/f.png";
 
 
 function Detail() {
@@ -191,11 +198,11 @@ function Detail() {
               <p className="font-bold text-lg">ULASAN</p>
               <div className="mt-1 flex">
                 <div className="ml-6">
-                  <img src="assets/star.png" width="" height="" />
+                  <img src={star} width="" height="" />
                 </div>
                 <a className="text-sm ml-2" href="">
                   (23)
-                </a>
+                </a>img
               </div>
             </div>
             <div className="bg-gray-200 py-[1px] mt-2 mb-8" />
@@ -203,7 +210,7 @@ function Detail() {
               <div>
                 <p className="font-bold mb-4">RATING</p>
                 <div className="flex">
-                  <img src="assets/starpack.png" width="" height="" />
+                  <img src={starpack} width="" height="" />
                   <div className="text-sm">
                     <p className="pb-4">(22)</p>
                     <p className="pb-4">(1)</p>
@@ -225,7 +232,7 @@ function Detail() {
                     </p>
                     <p>LONGGAR</p>
                   </div>
-                  <img className="ml-4" src="assets/slider.png" />
+                  <img className="ml-4" src={slider} />
                 </div>
               </div>
             </div>
@@ -240,7 +247,7 @@ function Detail() {
                 <p className="font-bold text-lg">WORTH IT</p>
                 <p className="text-sm text-slate-500">31/08/2023</p>
               </div>
-              <img src="assets/s5.png" className="my-4" />
+              <img src={sfive} className="my-4" />
               <p>
                 Ukuran yang dibeli XXL
                 <br />
@@ -271,7 +278,7 @@ function Detail() {
                 <p className="font-bold text-lg">PERFECT FOR WINTER</p>
                 <p className="text-sm text-slate-500">29/08/2023</p>
               </div>
-              <img src="assets/s5.png" className="my-4" />
+              <img src={sfive} className="my-4" />
               <p>
                 Ukuran yang dibeli: M<br />
                 Ukuran yang pas: Ukuran pas
@@ -301,7 +308,7 @@ function Detail() {
                 <p className="font-bold text-lg">TERASA HANGAT DAN LEMBUT</p>
                 <p className="text-sm text-slate-500">29/08/2023</p>
               </div>
-              <img src="assets/s5.png" className="my-4" />
+              <img src={sfive} className="my-4" />
               <p>
                 Ukuran yang dibeli: L<br />
                 Ukuran yang pas: Ukuran pas
@@ -350,7 +357,7 @@ function Detail() {
               </div>
               <div className="flex mt-4">
                 <div>
-                  <img src="assets/star.png" width="" height="" />
+                  <img src={star} width="" height="" />
                 </div>
                 <a className="text-sm" href="">
                   (23)
@@ -455,7 +462,7 @@ function Detail() {
             <div className="flex justify-between">
               <p className="text-xs font-bold">JUMLAH</p>
               <div className="flex">
-                <img src="assets/ukuran.png" width="" height="" />
+                <img src={ukuran} width="" height="" />
                 <a href="" className="underline text-xs font-bold">
                   GRAFIK UKURAN
                 </a>
@@ -519,7 +526,7 @@ function Detail() {
               <button>
                 <img
                   className="rounded-md"
-                  src="assets/x.png"
+                  src={twitter}
                   width=""
                   height=""
                 />
@@ -527,7 +534,7 @@ function Detail() {
               <button>
                 <img
                   className="rounded-md"
-                  src="assets/f.png"
+                  src={facebook}
                   width=""
                   height=""
                 />
@@ -663,7 +670,7 @@ function Detail() {
           </p>
           <p className="text-sm font-bold py-4">Rp149.000</p>
           <div className="flex mb-5">
-            <img src="Assets/star.png" />
+            <img src={star}/>
             <p>(23)</p>
           </div>
         </div>

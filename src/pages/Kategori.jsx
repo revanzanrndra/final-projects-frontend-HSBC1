@@ -405,7 +405,7 @@ function Kategori() {
         <section className="products items-center justify-center mt-5 lg:mt-0">
         <div className="product-grid grid grid-cols-2 gap-[0.5px] lg:grid-cols-4 lg:gap-x-16 lg:gap-y-10">
 
-            {products.length < 0 && <p>Loading...</p>
+            {products.length == 0 && <p>Loading...</p>
             }
             {
                 products.length > 0 &&
