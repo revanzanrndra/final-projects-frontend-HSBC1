@@ -1,4 +1,12 @@
+import { useTranslation } from "react-i18next";
+import i18n from "../lib/language";
+import RouterUtil from "../utils/router.util";
+
 function Header() {
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+  const { t } = useTranslation();
   return (
     <>
       <header className="bg-stone-100 top-0 left-0 w-full items-center flex">
@@ -12,10 +20,22 @@ function Header() {
             </div>
             <div>
               <span>
-                <button>English</button>
+                <button
+                  onClick={() => {
+                    changeLanguage("en");
+                  }}
+                >
+                  English
+                </button>
               </span>
               <span>
-                <button>Bahasa Indonesia</button>
+                <button
+                  onClick={() => {
+                    changeLanguage("id");
+                  }}
+                >
+                  Bahasa Indonesia
+                </button>
               </span>
             </div>
           </div>
@@ -47,7 +67,9 @@ function Header() {
             </h1>
             <ul className="flex justify-start gap-6 items-center ml-10 font-bold">
               <li className="group">
-                <a href="/Kategori">WANITA</a>
+                <a className="uppercase" href={RouterUtil.KATEGORI}>
+                  {t("Wanita")}
+                </a>
                 <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
@@ -344,7 +366,9 @@ function Header() {
                 </div>
               </li>
               <li className="group">
-                <a href="/Kategori">PRIA</a>
+                <a className="uppercase" href={RouterUtil.KATEGORI}>
+                  {t("Pria")}
+                </a>
                 <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
