@@ -70,7 +70,7 @@ function Header() {
                 <a className="uppercase" href={RouterUtil.KATEGORI}>
                   {t("Wanita")}
                 </a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <div className="dialog-menu hidden group-hover:block z-10 absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -80,58 +80,64 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Atasan</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Atasan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">T-shirt Lengan Pendek</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                T-shirt Lengan Pendek
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">T-shirt Lengan Panjang</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                T-shirt Lengan Panjang
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Atasan Crop</a>
+                              <a href={RouterUtil.KATEGORI}>Atasan Crop</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Bratop</a>
+                              <a href={RouterUtil.KATEGORI}>Bratop</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">UT(Graphic T-Shirt)</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                UT(Graphic T-Shirt)
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Koleksi Sweat &amp; JAket Hodie
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Kemaja &amp; blus (Lengan Pendek)
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Kemaja &amp; blus (Lengan Panjang)
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Cardigan</a>
+                              <a href={RouterUtil.KATEGORI}>Cardigan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sweater</a>
+                              <a href={RouterUtil.KATEGORI}>Sweater</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">PEACE FOR ALL</a>
+                              <a href={RouterUtil.KATEGORI}>PEACE FOR ALL</a>
                             </li>
                             <h3 className="font-bold text-lg mt-5 mb-4">
                               GAUN
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Gaun</a>
+                              <a href={RouterUtil.KATEGORI}>Gaun</a>
                             </li>
                             <h3 className="font-bold text-lg mt-5 mb-4">
                               MODEST WEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Modest Wear</a>
+                              <a href={RouterUtil.KATEGORI}>Modest Wear</a>
                             </li>
                           </ul>
                         </div>
@@ -141,58 +147,64 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Luaran</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Luaran</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Blouson &amp; Jaket Parka</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Blouson &amp; Jaket Parka
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Jaket &amp; Blazer</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Jaket &amp; Blazer
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AirSense</a>
+                              <a href={RouterUtil.KATEGORI}>AirSense</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Mantel</a>
+                              <a href={RouterUtil.KATEGORI}>Mantel</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Ultra Light Down</a>
+                              <a href={RouterUtil.KATEGORI}>Ultra Light Down</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               DALAMAN
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Dalaman</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Dalaman</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Bra Tanpa Kawat</a>
+                              <a href={RouterUtil.KATEGORI}>Bra Tanpa Kawat</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Bratop</a>
+                              <a href={RouterUtil.KATEGORI}>Bratop</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AIRism</a>
+                              <a href={RouterUtil.KATEGORI}>AIRism</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">HEATTECH</a>
+                              <a href={RouterUtil.KATEGORI}>HEATTECH</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Dalaman Atas</a>
+                              <a href={RouterUtil.KATEGORI}>Dalaman Atas</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Legging</a>
+                              <a href={RouterUtil.KATEGORI}>Legging</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Dalam</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Dalam</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kaos Kaki</a>
+                              <a href={RouterUtil.KATEGORI}>Kaos Kaki</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               SPORT UTILITY WEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sport Utility Wear</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Sport Utility Wear
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -202,30 +214,30 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Baawahan</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Baawahan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Jeans</a>
+                              <a href={RouterUtil.KATEGORI}>Jeans</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Legging</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Legging</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Lebar</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Lebar</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Sweat</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Sweat</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Casual</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Casual</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Celana Panjang &amp;Celana Ankle
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Celana Pendek &amp; Rok Celana
                               </a>
                             </li>
@@ -233,22 +245,26 @@ function Header() {
                               LOUNGEWEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Loungewear</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Koleksi Loungewear
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Piyama</a>
+                              <a href={RouterUtil.KATEGORI}>Piyama</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">RELACO</a>
+                              <a href={RouterUtil.KATEGORI}>RELACO</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sandal Rumah</a>
+                              <a href={RouterUtil.KATEGORI}>Sandal Rumah</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               PAKAIAN MATERNITY
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Pakaian Maternity</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Pakaian Maternity
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -258,37 +274,39 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Rok</a>
+                              <a href={RouterUtil.KATEGORI}>Rok</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               AKSESORIS
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Aksesoris</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Koleksi Aksesoris
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Topi</a>
+                              <a href={RouterUtil.KATEGORI}>Topi</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sarung Tangan</a>
+                              <a href={RouterUtil.KATEGORI}>Sarung Tangan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Tas</a>
+                              <a href={RouterUtil.KATEGORI}>Tas</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Syal</a>
+                              <a href={RouterUtil.KATEGORI}>Syal</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Ikat Pinggang</a>
+                              <a href={RouterUtil.KATEGORI}>Ikat Pinggang</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Payung</a>
+                              <a href={RouterUtil.KATEGORI}>Payung</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kacamata Hitam</a>
+                              <a href={RouterUtil.KATEGORI}>Kacamata Hitam</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Lainnya</a>
+                              <a href={RouterUtil.KATEGORI}>Lainnya</a>
                             </li>
                           </ul>
                         </div>
@@ -298,66 +316,76 @@ function Header() {
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
                         <ul>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">New arrivals</a>
+                            <a href={RouterUtil.KATEGORI}>New arrivals</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Limited Offers</a>
+                            <a href={RouterUtil.KATEGORI}>Limited Offers</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Value Buy</a>
+                            <a href={RouterUtil.KATEGORI}>Value Buy</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Coming Soon</a>
+                            <a href={RouterUtil.KATEGORI}>Coming Soon</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Featured News</a>
+                            <a href={RouterUtil.KATEGORI}>Featured News</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">UT Graphic T-Shirts</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              UT Graphic T-Shirts
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">STYLING BOOK</a>
+                            <a href={RouterUtil.KATEGORI}>STYLING BOOK</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">About LifeWear</a>
+                            <a href={RouterUtil.KATEGORI}>About LifeWear</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">
+                            <a href={RouterUtil.KATEGORI}>
                               Extra Size (Online exclusive)
                             </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Pembelian Jumlah Besar</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Pembelian Jumlah Besar
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Kirim Kado</a>
+                            <a href={RouterUtil.KATEGORI}>Kirim Kado</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">PEACE FOR ALL</a>
+                            <a href={RouterUtil.KATEGORI}>PEACE FOR ALL</a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Special collaboration
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Uniqlo and Mame Kurogouchi</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Uniqlo and Mame Kurogouchi
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">UNIQLO C</a>
+                            <a href={RouterUtil.KATEGORI}>UNIQLO C</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">INES DE LA FRESSANGE</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              INES DE LA FRESSANGE
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Uniqlo U</a>
+                            <a href={RouterUtil.KATEGORI}>Uniqlo U</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Special Collaboration</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Special Collaboration
+                            </a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Browse
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Koleksi Wanita</a>
+                            <a href={RouterUtil.KATEGORI}>Koleksi Wanita</a>
                           </li>
                         </ul>
                       </div>
@@ -369,7 +397,7 @@ function Header() {
                 <a className="uppercase" href={RouterUtil.KATEGORI}>
                   {t("Pria")}
                 </a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <div className="dialog-menu hidden group-hover:block z-10 absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -379,55 +407,65 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Atasan</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Atasan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">T-shirt Lengan Pendek</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                T-shirt Lengan Pendek
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">T-shirt Lengan Panjang</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                T-shirt Lengan Panjang
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">UT(Graphic T-Shirt)</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                UT(Graphic T-Shirt)
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kaos Polo</a>
+                              <a href={RouterUtil.KATEGORI}>Kaos Polo</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Koleksi Sweat &amp; Jaket Hodie
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Kemeja Kasual (Lengan Pendek)
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Kemeja Kasual (Lengan Panjang)
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kemeja Formal</a>
+                              <a href={RouterUtil.KATEGORI}>Kemeja Formal</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sweater &amp; Cardigan</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Sweater &amp; Cardigan
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">PEACE FOR ALL</a>
+                              <a href={RouterUtil.KATEGORI}>PEACE FOR ALL</a>
                             </li>
                             <h3 className="font-bold text-lg mt-5 mb-4">
                               LOUNGEWEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Loungewear</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Koleksi Loungewear
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Piyama</a>
+                              <a href={RouterUtil.KATEGORI}>Piyama</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sandal Rumah</a>
+                              <a href={RouterUtil.KATEGORI}>Sandal Rumah</a>
                             </li>
                           </ul>
                         </div>
@@ -437,49 +475,55 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Luaran</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Luaran</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Blouson &amp; Jaket Parka</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Blouson &amp; Jaket Parka
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Jaket &amp; Blazer</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Jaket &amp; Blazer
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AirSense</a>
+                              <a href={RouterUtil.KATEGORI}>AirSense</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Ultra Light Down</a>
+                              <a href={RouterUtil.KATEGORI}>Ultra Light Down</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               AKSESORIS
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Aksesoris</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Koleksi Aksesoris
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Topi</a>
+                              <a href={RouterUtil.KATEGORI}>Topi</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sarung Tangan</a>
+                              <a href={RouterUtil.KATEGORI}>Sarung Tangan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Tas</a>
+                              <a href={RouterUtil.KATEGORI}>Tas</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Syal</a>
+                              <a href={RouterUtil.KATEGORI}>Syal</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Ikat Pinggang</a>
+                              <a href={RouterUtil.KATEGORI}>Ikat Pinggang</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Payung</a>
+                              <a href={RouterUtil.KATEGORI}>Payung</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kacamata Hitam</a>
+                              <a href={RouterUtil.KATEGORI}>Kacamata Hitam</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Lainnya</a>
+                              <a href={RouterUtil.KATEGORI}>Lainnya</a>
                             </li>
                           </ul>
                         </div>
@@ -489,34 +533,40 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Baawahan</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Baawahan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Relax &amp; Lebar</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Celana Relax &amp; Lebar
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Jeans</a>
+                              <a href={RouterUtil.KATEGORI}>Jeans</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Chino</a>
+                              <a href={RouterUtil.KATEGORI}>Chino</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AIRSense</a>
+                              <a href={RouterUtil.KATEGORI}>AIRSense</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Sweat</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Sweat</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Panjang &amp; Ankle</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Celana Panjang &amp; Ankle
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Pendek</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Pendek</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               SPORT UTILITY WEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sport Utility Wear</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Sport Utility Wear
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -526,25 +576,25 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Dalaman</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Dalaman</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AIRism</a>
+                              <a href={RouterUtil.KATEGORI}>AIRism</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">HEATTECH</a>
+                              <a href={RouterUtil.KATEGORI}>HEATTECH</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Dalaman Atas</a>
+                              <a href={RouterUtil.KATEGORI}>Dalaman Atas</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Legging</a>
+                              <a href={RouterUtil.KATEGORI}>Legging</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Dalam</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Dalam</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kaos Kaki</a>
+                              <a href={RouterUtil.KATEGORI}>Kaos Kaki</a>
                             </li>
                           </ul>
                         </div>
@@ -554,57 +604,63 @@ function Header() {
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
                         <ul>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">New arrivals</a>
+                            <a href={RouterUtil.KATEGORI}>New arrivals</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Limited Offers</a>
+                            <a href={RouterUtil.KATEGORI}>Limited Offers</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Value Buy</a>
+                            <a href={RouterUtil.KATEGORI}>Value Buy</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Coming Soon</a>
+                            <a href={RouterUtil.KATEGORI}>Coming Soon</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Featured News</a>
+                            <a href={RouterUtil.KATEGORI}>Featured News</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">UT Graphic T-Shirts</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              UT Graphic T-Shirts
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">STYLING BOOK</a>
+                            <a href={RouterUtil.KATEGORI}>STYLING BOOK</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">About LifeWear</a>
+                            <a href={RouterUtil.KATEGORI}>About LifeWear</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">
+                            <a href={RouterUtil.KATEGORI}>
                               Extra Size (Online exclusive)
                             </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Pembelian Jumlah Besar</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Pembelian Jumlah Besar
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Kirim Kado</a>
+                            <a href={RouterUtil.KATEGORI}>Kirim Kado</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">PEACE FOR ALL</a>
+                            <a href={RouterUtil.KATEGORI}>PEACE FOR ALL</a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Special collaboration
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Kaws x UT</a>
+                            <a href={RouterUtil.KATEGORI}>Kaws x UT</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Uniqlo U</a>
+                            <a href={RouterUtil.KATEGORI}>Uniqlo U</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Special Collaboration</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Special Collaboration
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">
+                            <a href={RouterUtil.KATEGORI}>
                               Roger Federer collection By JW ANDERSON
                             </a>
                           </li>
@@ -612,7 +668,7 @@ function Header() {
                             Browse
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Koleksi Pria</a>
+                            <a href={RouterUtil.KATEGORI}>Koleksi Pria</a>
                           </li>
                         </ul>
                       </div>
@@ -621,8 +677,8 @@ function Header() {
                 </div>
               </li>
               <li className="group">
-                <a href="/Kategori">ANAK</a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <a href={RouterUtil.KATEGORI}>ANAK</a>
+                <div className="dialog-menu hidden group-hover:block z-10 absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -632,21 +688,25 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Atasan</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Atasan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">T-shirt</a>
+                              <a href={RouterUtil.KATEGORI}>T-shirt</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">UT(Graphic T-Shirt)</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                UT(Graphic T-Shirt)
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">
+                              <a href={RouterUtil.KATEGORI}>
                                 Koleksi Sweat &amp; Jaket Hodie
                               </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kemeja &amp; Blous</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Kemeja &amp; Blous
+                              </a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               DALAMAN
@@ -654,28 +714,30 @@ function Header() {
                           </ul>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Dalaman</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Dalaman</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Dalaman</a>
+                              <a href={RouterUtil.KATEGORI}>Dalaman</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AIRism</a>
+                              <a href={RouterUtil.KATEGORI}>AIRism</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">HEATTECH</a>
+                              <a href={RouterUtil.KATEGORI}>HEATTECH</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Bra</a>
+                              <a href={RouterUtil.KATEGORI}>Bra</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Legging &amp; Celana Ketat</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Legging &amp; Celana Ketat
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Dalam</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Dalam</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kaos Kaki</a>
+                              <a href={RouterUtil.KATEGORI}>Kaos Kaki</a>
                             </li>
                           </ul>
                         </div>
@@ -685,19 +747,23 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Luaran</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Luaran</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               LOUNGEWEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Loungewear</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Koleksi Loungewear
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Loungewear &amp; Piyama</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Loungewear &amp; Piyama
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">RELACO</a>
+                              <a href={RouterUtil.KATEGORI}>RELACO</a>
                             </li>
                           </ul>
                         </div>
@@ -707,25 +773,27 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Baawahan</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Baawahan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Panjang</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Panjang</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Celana Pendek</a>
+                              <a href={RouterUtil.KATEGORI}>Celana Pendek</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Rok</a>
+                              <a href={RouterUtil.KATEGORI}>Rok</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               AKSESORIS
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Aksesoris</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                Koleksi Aksesoris
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Lainnya</a>
+                              <a href={RouterUtil.KATEGORI}>Lainnya</a>
                             </li>
                           </ul>
                         </div>
@@ -735,13 +803,13 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Gaun</a>
+                              <a href={RouterUtil.KATEGORI}>Gaun</a>
                             </li>
                             <h3 className="font-semibold text-lg mt-5 mb-4">
                               SPORT UTILITY WEAR
                             </h3>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Sport Utility</a>
+                              <a href={RouterUtil.KATEGORI}>Sport Utility</a>
                             </li>
                           </ul>
                         </div>
@@ -751,51 +819,57 @@ function Header() {
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
                         <ul>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">New arrivals</a>
+                            <a href={RouterUtil.KATEGORI}>New arrivals</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Limited Offers</a>
+                            <a href={RouterUtil.KATEGORI}>Limited Offers</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Value Buy</a>
+                            <a href={RouterUtil.KATEGORI}>Value Buy</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Coming Soon</a>
+                            <a href={RouterUtil.KATEGORI}>Coming Soon</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Featured News</a>
+                            <a href={RouterUtil.KATEGORI}>Featured News</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">UT Graphic T-Shirts</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              UT Graphic T-Shirts
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">STYLING BOOK</a>
+                            <a href={RouterUtil.KATEGORI}>STYLING BOOK</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">About LifeWear</a>
+                            <a href={RouterUtil.KATEGORI}>About LifeWear</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">
+                            <a href={RouterUtil.KATEGORI}>
                               Extra Size (Online exclusive)
                             </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Pembelian Jumlah Besar</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Pembelian Jumlah Besar
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Kirim Kado</a>
+                            <a href={RouterUtil.KATEGORI}>Kirim Kado</a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Special collaboration
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Special Collaboration</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Special Collaboration
+                            </a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Browse
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Koleksi Anak</a>
+                            <a href={RouterUtil.KATEGORI}>Koleksi Anak</a>
                           </li>
                         </ul>
                       </div>
@@ -804,8 +878,8 @@ function Header() {
                 </div>
               </li>
               <li className="group">
-                <a href="/Kategori">BAYI</a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <a href={RouterUtil.KATEGORI}>BAYI</a>
+                <div className="dialog-menu hidden group-hover:block z-10 absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -815,10 +889,10 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Pakaian Newborn</a>
+                              <a href={RouterUtil.KATEGORI}>Pakaian Newborn</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Aksesoris</a>
+                              <a href={RouterUtil.KATEGORI}>Aksesoris</a>
                             </li>
                           </ul>
                         </div>
@@ -828,37 +902,39 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Newborn</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Newborn</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Luaran</a>
+                              <a href={RouterUtil.KATEGORI}>Luaran</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">One Piece</a>
+                              <a href={RouterUtil.KATEGORI}>One Piece</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Atasan</a>
+                              <a href={RouterUtil.KATEGORI}>Atasan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Baju Terusan</a>
+                              <a href={RouterUtil.KATEGORI}>Baju Terusan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Legging</a>
+                              <a href={RouterUtil.KATEGORI}>Legging</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">UT(Graphic T-Shirt)</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                UT(Graphic T-Shirt)
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Gaun</a>
+                              <a href={RouterUtil.KATEGORI}>Gaun</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AIRism</a>
+                              <a href={RouterUtil.KATEGORI}>AIRism</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kaos Kaki</a>
+                              <a href={RouterUtil.KATEGORI}>Kaos Kaki</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Aksesoris</a>
+                              <a href={RouterUtil.KATEGORI}>Aksesoris</a>
                             </li>
                           </ul>
                         </div>
@@ -868,40 +944,42 @@ function Header() {
                           </h3>
                           <ul>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Koleksi Balita</a>
+                              <a href={RouterUtil.KATEGORI}>Koleksi Balita</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Atasan</a>
+                              <a href={RouterUtil.KATEGORI}>Atasan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Luaran</a>
+                              <a href={RouterUtil.KATEGORI}>Luaran</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Bawahan</a>
+                              <a href={RouterUtil.KATEGORI}>Bawahan</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Piyama</a>
+                              <a href={RouterUtil.KATEGORI}>Piyama</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Gaun</a>
+                              <a href={RouterUtil.KATEGORI}>Gaun</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">UT(Graphic T-Shirt)</a>
+                              <a href={RouterUtil.KATEGORI}>
+                                UT(Graphic T-Shirt)
+                              </a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">HEATTECH</a>
+                              <a href={RouterUtil.KATEGORI}>HEATTECH</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Dalaman Atas</a>
+                              <a href={RouterUtil.KATEGORI}>Dalaman Atas</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">AIRism</a>
+                              <a href={RouterUtil.KATEGORI}>AIRism</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Kaos Kaki</a>
+                              <a href={RouterUtil.KATEGORI}>Kaos Kaki</a>
                             </li>
                             <li className="mb-4 text-sm font-normal">
-                              <a href="/Kategori">Aksesoris</a>
+                              <a href={RouterUtil.KATEGORI}>Aksesoris</a>
                             </li>
                           </ul>
                         </div>
@@ -911,62 +989,68 @@ function Header() {
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
                         <ul>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">New arrivals</a>
+                            <a href={RouterUtil.KATEGORI}>New arrivals</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Limited Offers</a>
+                            <a href={RouterUtil.KATEGORI}>Limited Offers</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Value Buy</a>
+                            <a href={RouterUtil.KATEGORI}>Value Buy</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Coming Soon</a>
+                            <a href={RouterUtil.KATEGORI}>Coming Soon</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Featured News</a>
+                            <a href={RouterUtil.KATEGORI}>Featured News</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">UT Graphic T-Shirts</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              UT Graphic T-Shirts
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">STYLING BOOK</a>
+                            <a href={RouterUtil.KATEGORI}>STYLING BOOK</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">About LifeWear</a>
+                            <a href={RouterUtil.KATEGORI}>About LifeWear</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">
+                            <a href={RouterUtil.KATEGORI}>
                               Extra Size (Online exclusive)
                             </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Pembelian Jumlah Besar</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Pembelian Jumlah Besar
+                            </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Kirim Kado</a>
+                            <a href={RouterUtil.KATEGORI}>Kirim Kado</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">PEACE FOR ALL</a>
+                            <a href={RouterUtil.KATEGORI}>PEACE FOR ALL</a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Special collaboration
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">
+                            <a href={RouterUtil.KATEGORI}>
                               Roger Federer collection By JW ANDERSON
                             </a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Uniqlo U</a>
+                            <a href={RouterUtil.KATEGORI}>Uniqlo U</a>
                           </li>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Special Collaboration</a>
+                            <a href={RouterUtil.KATEGORI}>
+                              Special Collaboration
+                            </a>
                           </li>
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             Browse
                           </h3>
                           <li className="mb-4 text-sm font-normal">
-                            <a href="/Kategori">Koleksi Pria</a>
+                            <a href={RouterUtil.KATEGORI}>Koleksi Pria</a>
                           </li>
                         </ul>
                       </div>
