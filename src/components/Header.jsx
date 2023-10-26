@@ -28,6 +28,7 @@ function Header() {
                   English
                 </button>
               </span>
+              <span>|</span>
               <span>
                 <button
                   onClick={() => {
@@ -1081,7 +1082,7 @@ function Header() {
               </li>
               {/* login */}
               <li>
-                <a href="/Login">
+                <a href={RouterUtil.LOGIN}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
