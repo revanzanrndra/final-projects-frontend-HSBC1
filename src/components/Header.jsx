@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import i18n from "../lib/language";
 import RouterUtil from "../utils/router.util";
+import Cart from "../pages/Cart";
 
 function Header() {
   const changeLanguage = (lang) => {
@@ -1116,7 +1117,7 @@ function Header() {
               </li>
               {/* keranjang */}
               <li>
-                <a href="">
+                <a href="/Cart">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}
