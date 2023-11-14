@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import i18n from "../lib/language";
 import RouterUtil from "../utils/router.util";
-import Cart from "../pages/Cart";
 
 function Header() {
   const changeLanguage = (lang) => {
@@ -1098,7 +1097,7 @@ function Header() {
                   </svg>
                 </a>
               </li>
-              {/* whitclist */}
+              {/* whishlist */}
               <li>
                 <a href="">
                   <svg
