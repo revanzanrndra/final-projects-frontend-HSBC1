@@ -678,7 +678,9 @@ function Header() {
                 </div>
               </li>
               <li className="group">
-                <a href={RouterUtil.KATEGORI}>ANAK</a>
+                <a className="uppercase" href={RouterUtil.KATEGORI}>
+                  {t("Anak")}
+                </a>
                 <div className="dialog-menu hidden group-hover:block z-10 absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
@@ -879,7 +881,9 @@ function Header() {
                 </div>
               </li>
               <li className="group">
-                <a href={RouterUtil.KATEGORI}>BAYI</a>
+                <a className="uppercase" href={RouterUtil.KATEGORI}>
+                  {t("Bayi")}
+                </a>
                 <div className="dialog-menu hidden group-hover:block z-10 absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
