@@ -2,8 +2,14 @@ import logoFacebook from "../assets/facebook.svg";
 import logoTwitter from "../assets/twitter.svg";
 import logoInstagram from "../assets/instagram.svg";
 import logoYoutube from "../assets/youtube-.svg";
+import { useTranslation } from "react-i18next";
+import i18n from "../lib/language";
 
 function Footer() {
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+  const { t } = useTranslation();
   return (
     <>
       <footer className="bg-stone-100 w-full pt-12 border-b items-center flex">
@@ -11,17 +17,21 @@ function Footer() {
           <div className="flex flex-wrap">
             <div className="w-1/6">
               <h3 className="font-semibold text-lg mt-5 mb-4">
-                Tentang Uniqlo
+                {t("Tentang")}
               </h3>
               <ul>
                 <li className="mb-4 text-sm font-normal">
-                  <a href="">Informasi</a>
+                  <a className="" href="">
+                    {t("Informasi")}
+                  </a>
                 </li>
                 <li className="mb-4 text-sm font-normal">
-                  <a href="">Pencari Lokasi Toko</a>
+                  <a href="">{t("Toko")}</a>
                 </li>
                 <li className="mb-4 text-sm font-normal">
-                  <a href="">Pembelian Jumlah Besar</a>
+                  <a className="" href="">
+                    {t("Pembelianjmlbesar")}
+                  </a>
                 </li>
                 <li className="mb-4 text-sm font-normal">
                   <a href="">Layanan Alterasi</a>
@@ -35,7 +45,9 @@ function Footer() {
               </ul>
             </div>
             <div className="w-1/6">
-              <h3 className="font-semibold text-lg mt-5 mb-4">Bantuan</h3>
+              <h3 className="font-semibold text-lg mt-5 mb-4">
+                {t("Bantuan")}
+              </h3>
               <ul>
                 <li className="mb-4 text-sm font-normal">
                   <a href="">FAQ</a>
@@ -58,7 +70,7 @@ function Footer() {
               </ul>
             </div>
             <div className="w-1/6">
-              <h3 className="font-semibold text-lg mt-5 mb-4">Akun</h3>
+              <h3 className="font-semibold text-lg mt-5 mb-4">{t("Akun")}</h3>
               <ul>
                 <li className="mb-4 text-sm font-normal">
                   <a href="">Membership</a>
@@ -72,7 +84,9 @@ function Footer() {
               </ul>
             </div>
             <div className="w-48">
-              <h3 className="font-semibold text-lg mt-5 mb-4">Hubungi Kami</h3>
+              <h3 className="font-semibold text-lg mt-5 mb-4">
+                {t("Hubungi")}
+              </h3>
               <ul>
                 <li className="mb-4 text-sm font-normal">
                   <a href="">Untuk Layanan Pengaduan</a>
@@ -139,9 +153,21 @@ function Footer() {
             </div>
           </div>
           <div className="flex justify-items-start mt-8 mb-4">
-            <button>English</button>
+            <button
+              onClick={() => {
+                changeLanguage("en");
+              }}
+            >
+              English
+            </button>
             <span>|</span>
-            <button>Bahasa Indonesia</button>
+            <button
+              onClick={() => {
+                changeLanguage("id");
+              }}
+            >
+              Bahasa Indonesia
+            </button>
           </div>
         </div>
       </footer>
