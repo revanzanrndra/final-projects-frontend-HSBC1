@@ -1099,7 +1099,7 @@ function Header() {
               </li>
               {/* whishlist */}
               <li>
-                <a href="">
+                <a href="/Wishlist">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
