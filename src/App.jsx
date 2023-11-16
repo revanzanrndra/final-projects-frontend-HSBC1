@@ -6,9 +6,12 @@ import Register from "./pages/Register";
 import Kategori from "./pages/Kategori";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
+import Cart from "./pages/Cart";
+import Wishlist from "./pages/Wishlist";
 import Login from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/Notfound";
+import RouterUtil from "./utils/router.util";
 function App() {
   const [count, setCount] = useState(0);
   return (
@@ -20,7 +23,9 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Detail/:id" element={<Detail />} />
-          <Route path="/Kategori" element={<Kategori />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Wishlist" element={<Wishlist />} />
+          <Route path={RouterUtil.KATEGORI} element={<Kategori />} />
           <Route path="/Footer" element={<Footer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
