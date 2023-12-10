@@ -7,29 +7,25 @@ function Login() {
   const [email, emailchange] = useState("");
   const [password, passwordchange] = useState("");
 
-  const ProceedLogin = (e) => {
+  const ProceedLogin = async (e) => {
     e.preventDefault();
-    if (validate()) {
-      const user = DummyData.find((userData) => userData.email === email);
-      if (user && user.password === password) {
-        alert("Login succes");
-        window.location.href = "/";
-      } else {
-        alert("Login failed, check your email and password ");
+    
+    try {
+      const response = await axios.post("http://localhost:5000/auth/login", {
+        email,
+        password,
+      });
+
+      const data = response.data;
+
+      if (data.message === "success") {
+        navigate("/");
       }
+
+      console.log(data);
+    } catch (error) {
+      console.error("Error during login:", error);
     }
-  };
-  const validate = () => {
-    let result = true;
-    if (email === "" || email === null) {
-      result = false;
-      alert("Please input your email");
-    }
-    if (password === "" || password === null) {
-      result = false;
-      alert("Please input your password");
-    }
-    return result;
   };
 
   return (
@@ -54,7 +50,7 @@ function Login() {
             </h3>
             <input
               className="w-full h-10 md:h-12 bg-gray-100"
-              type="text"
+              type="email"
               placeholder="Alamat email Anda"
               value={email}
               onChange={(e) => emailchange(e.target.value)}
