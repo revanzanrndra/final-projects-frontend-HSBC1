@@ -509,9 +509,9 @@ function Detail() {
                 Stok hampir habis
               </p>
             </div>
-            <button className="text-white font-bold bg-red-600 p-2 w-full my-5 hover:bg-red-500">
+            <a href={"/Cart/"}><button className="text-white font-bold bg-red-600 p-2 w-full my-5 hover:bg-red-500">
               TAMBAH KE KERANJANG
-            </button>
+            </button></a>
             <div className="flex gap-4">
               <button className="font-bold p-2 w-1/2 border border-black">
                 TAMBAH KE WISHLIST
